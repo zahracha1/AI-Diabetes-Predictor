@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import joblib
-import plotly.graph_objects as go
 from datetime import datetime
 
 # CONFIG PAGE
