@@ -224,16 +224,16 @@ with st.container():
         with st.container():
             
             Pregnancies = st.number_input("📊 Nombre de grossesses")
-            Glucose = st.number_input("🩸 Glycémie")
-            BloodPressure = st.number_input("❤️ Pression artérielle")
-            SkinThickness = st.number_input("📏 Épaisseur de la peau") 
+            Glucose = st.number_input("🩸 Glycémie (mg/dL)")
+            BloodPressure = st.number_input("❤️ Pression artérielle (mmHg)")
+            SkinThickness = st.number_input("📏 Épaisseur de la peau (mm) ") 
             st.markdown('</div>', unsafe_allow_html=True)
     
     with col2:
         with st.container():
-            Insulin = st.number_input("💉 Insuline")
+            Insulin = st.number_input("💉 Insuline (µU/mL)")
             DiabetesPedigreeFunction = st.number_input("🧬 Score héréditaire")
-            Age = st.number_input("🎂 Âge")
+            Age = st.number_input("🎂 Âge (ans)")
             BMI = st.number_input("👤 Indice de masse corporelle (BMI)")
             st.markdown('</div>', unsafe_allow_html=True)
 
@@ -332,7 +332,7 @@ if predict_button:
     
     if prediction == 1:
         st.warning("""
-        **🔔 Consultation médicale recommandée :**
+        🔔 Consultation médicale recommandée :
         - Prenez rendez-vous avec votre médecin traitant
         - Envisagez un test HbA1c pour confirmation
         - Adoptez une alimentation équilibrée
@@ -340,7 +340,7 @@ if predict_button:
         """)
     else:
         st.info("""
-        ** Prévention et bien-être :**
+        Prévention et bien-être :
         - Maintenez une alimentation saine et équilibrée
         - Pratiquez 30 minutes d'exercice par jour
         - Contrôlez régulièrement votre glycémie
